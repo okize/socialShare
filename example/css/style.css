@@ -33,26 +33,6 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 #micrositeContainer table { border-collapse: collapse; border-spacing: 0; }
 #micrositeContainer th #micrositeContainer td { vertical-align: top; }
 
-/* ColorBox Core Styles */
-#colorbox, #cboxOverlay, #cboxWrapper { left: 0; overflow: hidden; position: absolute; top: 0; }
-#cboxOverlay { height: 100%; position: fixed; width: 100%; }
-#cboxMiddleLeft, #cboxBottomLeft { clear: left; }
-#cboxContent { position: relative; }
-#cboxLoadedContent { overflow: auto; }
-#cboxTitle { margin: 0; }
-#cboxLoadingOverlay, #cboxLoadingGraphic { height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
-#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow { cursor: pointer; }
-.cboxPhoto { border: 0; display: block; float: left; margin: auto; }
-.cboxIframe { border: 0; display: block; height: 100%; width: 100%; }
-/* ColorBox User Styles */
-#colorbox, #cboxOverlay, #cboxWrapper { z-index: 999999; }
-#cboxOverlay { background-color: #000; }
-#cboxClose { position: absolute; top: 0 !important; right: 0 !important; display: block; background: url(../images/lightboxClose.png) no-repeat 0 0 !important; width: 31px !important; height: 31px !important; white-space: nowrap; overflow: hidden; text-indent: 100%; }
-#cboxLoadedContent { background: #000; background: rgba(0, 0, 0, 0.75) url(../images/backgroundColorboxSpinner.gif) no-repeat center center; border-color: #000; border: 10px solid rgba(0, 0, 0, 0.25); border-radius: 6px; }
-#cboxContent { padding: 20px; }
-#cboxTitle { background: #000; background: rgba(0, 0, 0, 0.50); bottom: 0; color: #fff; left: 0; position: absolute; line-height: 1; text-align: center; text-indent: 10px; margin: 0 30px 30px; }
-#cboxTitle div { padding: 10px; }
-
 /* content callout */
 .micrositeContentCallout { border-top: 2px solid #ccc; border-bottom: 2px solid #ccc; width: 150px; float: left; margin: 10px 20px 10px 0; }
 .micrositeContentCalloutInner { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin: 1px 0; padding: 10px; }
@@ -73,76 +53,24 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 .micrositeSocialMedia-email a { background-position: 0 0; top: 0; width: 52px; }
 
 /* layout selectors */
-body { background-color: #e5e8e8; font-family: HPSimplifiedRegular, Arial, sans-serif; }
-h1, h2, h3, h4, h5, h6 { font-family: HPSimplifiedRegular, Arial, sans-serif; font-weight: normal; }
-#micrositeContainerInner { width: 980px; margin: 0 auto 50px; }
-#micrositeContainerCompress { background-color: #fff; padding: 0 20px; border-top: 3px solid #d7410b; border-bottom: 3px solid #d7410b; }
-#micrositeContent { font-size: 80%; overflow: hidden; }
-#micrositeContentColumnFull { margin: 0 0 25px; }
-#micrositeContentColumnLeft { float: left; width: 660px; }
-#micrositeContentColumnRight { float: right; width: 300px; }
+body { background-color: #000; }
+#micrositeContainerCompress { background-color: #fff; margin: 0 auto; width: 980px; }
+#micrositeContent { font-size: 80%; overflow: hidden; clear: both;  }
+#micrositeContentColumnFull { margin: 15px 20px 25px; }
+#micrositeContentColumnLeft { float: left; width: 620px; margin: 0 20px 0; }
+#micrositeContentColumnRight { float: right; width: 300px; margin: 0 20px 0 0; }
 .micrositeContentColumnSpan { clear: both; }
 
-
-/* ugh */
-.micrositeModuleHeader h3, h1, h2 { font-size: 26px; margin: 0 0 5px !important; }
-
-/* header */
-#micrositeHeader { position: relative; margin: 0 0 20px; }
-#micrositeHeaderBanner p { margin: 0; }
-
-#micrositeHeaderNavigation { background-color: #f2f2f2; border-bottom: 3px solid #ccc;  }
-#micrositeHeaderNavigation ul { margin: 0 !important; padding: 0 !important; list-style: none; text-align: center; }
-#micrositeHeaderNavigation li { position: relative; width: 100px; border-left: 1px solid #ccc; margin: 5px 0 5px; display: inline-block; }
-#micrositeHeaderNavigation li:first-child { border-left: none; }
-#micrositeHeaderNavigation a { color: #000; text-shadow: 1px 1px 1px #fff; }
-#micrositeHeaderNavigation li.on a, #micrositeHeaderNavigation li.active a { color: #0099d8; }
-#micrositeHeaderNavigation li.on:after, #micrositeHeaderNavigation li.on:before {
-  bottom: -8px;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-}
-#micrositeHeaderNavigation li.on:after {
-  border-bottom-color: #fff;
-  border-width: 6px;
-  left: 50%;
-  margin-left: -6px;
-}
-#micrositeHeaderNavigation li.on:before {
-  border-bottom-color: #ccc;
-  border-width: 10px;
-  left: 50%;
-  margin-left: -10px;
-}
-
-/* footer */
-#micrositeFooter { clear: both; position: relative; }
-#micrositeFooter { clear: both; position: relative; }
-#micrositeFooter .micrositeFooterBottom { background: url(../images/footerLogo.png) no-repeat 0 20px; min-height: 45px; padding: 20px 0; }
-#micrositeFooter .micrositeFooterBottom ul { list-style: none; margin: 0; overflow: hidden; padding: 28px 0 0 100px; }
-#micrositeFooter .micrositeFooterBottom li { float: left; font-size: 12px; padding-right: 10px; }
-#micrositeFooter .micrositeFooterBottom a { color: #00a89c; }
+#micrositeHeader, #micrositeFooter, #micrositeContentColumnRight { background-color: #efefef; font-size: 25px; color: #666; padding: 25px; }
+#micrositeHeader, #micrositeFooter { clear: both; margin: 0 0 25px; }
+#micrositeFooter { margin: 25px 0 0; }
+#micrositeContentColumnRight { background-color: #efefef; color: #666; height: 1000px; width: 250px; }
 
 
-/* featured video player */
-.featuredVideo { border: 1px solid #0061a5; padding: 10px 0 10px 10px; margin: 0 0 25px; vertical-align: top; position: relative; *zoom: 1; }
-.featuredVideo:before, .featuredVideo:after { content: ' '; display: table; }
-.featuredVideo:after { clear: both; }
-.featuredVideoPlayer { width: 640px; height: 360px; background-color: black; float: left; }
-.noPlaylist .featuredVideoPlayer { width: 920px; height: 520px; }
-.featuredVideoPlaylist { width: 280px; height: 380px; background-color: #ececec; float: right; margin: -10px 0; overflow-y: scroll; overflow-x: hidden; visibility: hidden; }
-.featuredVideoPlaylistHeader { color: #fff; background-color: #0061a5; font-size: 16px; padding: 3px 8px !important; margin: 0 !important; }
-.featuredVideoPlaylist ul { list-style: none; padding: 0 !important; margin: 3px 0 3px !important; }
-.featuredVideoPlaylist li { cursor: pointer; background-color: #fff; min-height: 66px; margin-bottom: 2px; border-left: 6px solid #ccc; }
-.featuredVideoPlaylist li.active { border-left: 6px solid #0099db; }
-.featuredVideoPlaylist .featuredVideoTitle { font-size: 13px; margin: 0 !important; line-height: 1.3 !important;}
-.featuredVideoPlaylist .mediaBlock { padding: 8px 5px; margin: 1px 2px 0; }
-.featuredVideoPlaylist .mediaBlock, .featuredVideoPlaylist .mediaBlockContent { overflow: hidden; _overflow: visible; *zoom: 1; }
-.featuredVideoPlaylist .mediaBlock img { float: left; margin-right: 10px; display: block; width: 100px; height: 50px; }
-.featuredVideoSummary { display: none; }
-.featuredVideoPlaylistTooltip { display: none; z-index: 1; border: 1px solid #444; background-color: #fff; position: absolute; right: 288px; top: 0; min-height: 48px; width: 250px; padding: 8px 10px; font-size: 12px; line-height: 16px; box-shadow: 0 0 20px rgba(0, 0, 0, .5); }
-.featuredVideoPlaylistTooltip:after { content: ''; width: 0; height: 0; position: absolute; top: 50%; margin-top: -8px; right: -8px;  border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-left: 8px solid #444; }
-/* featured video player */
+
+#micrositeContentFooter { margin: 0 20px; }
+#micrositeContentColumnLeft .micrositeContentColumnSpan { margin: 0; }
+
+
+
+#micrositeContentFooter h6, #micrositeContentColumnLeft h6 { clear: both; border: 1px solid #666; background-color: #333; display: block; font-weight: bold; font-size: 14px; padding: 10px !important; color: #fff; margin: 0 0 -15px !important; }
