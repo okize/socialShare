@@ -66,11 +66,7 @@ body { background-color: #000; }
 #micrositeFooter { margin: 25px 0 0; }
 #micrositeContentColumnRight { background-color: #efefef; color: #666; height: 1000px; width: 250px; }
 
-
-
 #micrositeContentFooter { margin: 0 20px; }
 #micrositeContentColumnLeft .micrositeContentColumnSpan { margin: 0; }
-
-
 
 #micrositeContentFooter h6, #micrositeContentColumnLeft h6 { clear: both; border: 1px solid #666; background-color: #333; display: block; font-weight: bold; font-size: 14px; padding: 10px !important; color: #fff; margin: 0 0 -15px !important; }
