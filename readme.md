@@ -1,1 +1,1 @@
-Social Share microsite component
+Social Share - component that displays social sharing buttons

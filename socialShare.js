@@ -1,12 +1,8 @@
-/*!
-socialShare v0.1.0 (http://okize.github.com/)
-Copyright (c) 2013 | Licensed under the MIT license - http://www.opensource.org/licenses/mit-license.php
-*/
-
-
 (function() {
   (function(factory) {
-    if (typeof define === 'function' && define.amd) {
+    if (typeof exports === 'object') {
+      return factory(require('jquery'));
+    } else if (typeof define === 'function' && define.amd) {
       return define(['jquery'], factory);
     } else {
       return factory(jQuery);

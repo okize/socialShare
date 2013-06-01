@@ -1,13 +1,16 @@
-###!
-socialShare v0.1.0 (http://okize.github.com/)
-Copyright (c) 2013 | Licensed under the MIT license - http://www.opensource.org/licenses/mit-license.php
-###
+#!
+# socialShare v0.1.0 (http://okize.github.com/)
+# Copyright (c) 2013 | Licensed under the MIT license
+# http://www.opensource.org/licenses/mit-license.php
+#
 
+# universal module definition
 ((factory) ->
 
-  # use AMD or browser globals to create a jQuery plugin.
-  if typeof define is 'function' and define.amd
-    define [ 'jquery' ], factory
+  if typeof exports is 'object'
+    factory require('jquery')
+  else if typeof define is 'function' and define.amd
+    define ['jquery'], factory
   else
     factory jQuery
 
